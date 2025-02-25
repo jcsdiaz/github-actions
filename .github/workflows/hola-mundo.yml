@@ -1,6 +1,6 @@
 name: estoy aprendiendo github actions
 run-name: !estoy aprendiendo!
-on [push]
+on : [push]
 
 jobs:
   hola-mundo:
