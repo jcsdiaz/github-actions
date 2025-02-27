@@ -1,0 +1,14 @@
+name: usando variables de entorno
+run-name: estamos aprendiendo
+on:
+  workflow_dispatch
+env:
+  TRABAJO: en CENIGAA
+jobs:
+  saludo-trabajador:
+    runs-on: ubuntu-latest
+    env:
+      SALUDO: hola
+    steps:
+      - name: saludar
+        run: echo "$SALUDO, ${{ vars.NOMBRE }}, yo trabajo en ${{env.TRABAJO}} 
